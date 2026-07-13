@@ -331,6 +331,7 @@ ax.set_title("Top 10 Features Affecting Customer Churn")
 ax.grid(axis="x", linestyle="--", alpha=0.5)
 
 st.pyplot(fig)
+plt.close(fig)
 
 
 # Top 15 feature importance table
