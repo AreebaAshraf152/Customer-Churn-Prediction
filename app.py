@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import os
+st.write("App started successfully")
 
 # Page title
 st.set_page_config(
