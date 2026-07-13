@@ -1,5 +1,8 @@
 # 📊 Telco Customer Churn Prediction
 
+# Telco Customer Churn Prediction
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://customer-churn-prediction-xkjdk7wb8kvypnbervwegz.streamlit.app/)
 > An end-to-end Machine Learning project that predicts customer churn for a telecommunications company using classification models and an interactive Streamlit web application.
 
 ---
@@ -192,6 +195,12 @@ This helps explain which customer attributes contribute most to churn prediction
 # Streamlit Web Application
 
 A complete Streamlit application was developed to make predictions through an interactive user interface.
+### 🚀 Live Demo
+
+Try the deployed application here:
+
+🔗 Streamlit App:
+https://customer-churn-prediction-xkjdk7wb8kvypnbervwegz.streamlit.app/
 
 ### Features
 
