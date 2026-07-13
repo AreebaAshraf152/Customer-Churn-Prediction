@@ -10,7 +10,7 @@ st.set_page_config(
     page_icon="📊",
     layout="wide"
 )
-st.write("App started successfully")
+
 
 st.title("📊 Telco Customer Churn Prediction")
 
