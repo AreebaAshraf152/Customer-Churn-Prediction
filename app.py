@@ -27,9 +27,13 @@ scaler_path = os.path.join(BASE_DIR, "models", "scaler.pkl")
 features_path = os.path.join(BASE_DIR, "models", "feature_columns.pkl")
 
 # Load saved files
-model = pickle.load(open(model_path, "rb"))
-scaler = pickle.load(open(scaler_path, "rb"))
-feature_columns = pickle.load(open(features_path, "rb"))
+try:
+    model = pickle.load(open(model_path, "rb"))
+    scaler = pickle.load(open(scaler_path, "rb"))
+    feature_columns = pickle.load(open(features_path, "rb"))
+except Exception as e:
+    st.error(f"Error loading model: {e}")
+    st.stop()
 st.info(
     "Fill in the customer details below and click **🚀 Predict Customer Churn** to estimate the likelihood of churn."
 )
