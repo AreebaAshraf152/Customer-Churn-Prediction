@@ -32,7 +32,8 @@ try:
     scaler = pickle.load(open(scaler_path, "rb"))
     feature_columns = pickle.load(open(features_path, "rb"))
 except Exception as e:
-    st.error(f"Error loading model: {e}")
+    st.error(f"Model loading failed: {type(e).__name__}")
+    st.error(str(e))
     st.stop()
 st.info(
     "Fill in the customer details below and click **🚀 Predict Customer Churn** to estimate the likelihood of churn."
